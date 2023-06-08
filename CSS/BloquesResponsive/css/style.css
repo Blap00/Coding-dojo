@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#div_uno {
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: silver;
+}
+
+#div_dos {
+    height: 130px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: green;
+}
+
+#div_tres {
+    height: 300px;
+    width: 200px;
+    margin-top: 7px;
+    margin-right: 10px;
+    margin-left: 15px;
+    vertical-align: top;
+    display: inline-block;
+    background-color: blue;
+}
+
+#div_cuatro {
+    padding-left: 35px !important;
+    padding-top: 35px !important;
+    height: 418px;
+    width: 716px;
+    padding: 18px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: red;
+}
+
+.cuadrados_amarillos {
+    height: 195px;
+    width: 208px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: yellow;
+}
+
+#div_ocho {
+    height: 115px;
+    width: 652px;
+    margin-top: 24px;
+    background-color: purple;
+}
+
+/* Responsive Styles */
+
+@media screen and (min-width: 1024px) {
+    #div_uno {
+        width: 980px;
+    }
+
+    #div_cuatro {
+        height: auto;
+    }
+
+    .cuadrados_amarillos {
+        width: 208px;
+    }
+
+    #div_ocho {
+        width: 652px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    #div_uno {
+        width: 90%;
+    }
+
+    #div_tres {
+        display: none;
+    }
+
+    #div_dos {
+        height: 20vw;
+    }
+
+    #div_cuatro {
+        height: auto;
+    }
+
+    .cuadrados_amarillos {
+        width: 47%;
+    }
+
+    #div_ocho {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 1px) {
+    #div_uno {
+        width: 90%;
+    }
+
+    #div_tres {
+        display: none;
+    }
+
+    #div_cuatro {        
+        height: auto;
+        width: 93%;
+    }
+
+    .cuadrados_amarillos {
+        width: 50%;
+        margin-bottom: 18px;
+    }
+
+    #div_ocho {
+        width: 90%;
+    }
+}
