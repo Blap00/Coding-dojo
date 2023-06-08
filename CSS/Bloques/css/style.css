@@ -1,0 +1,37 @@
+.header{
+    display:inline-flex;
+}
+img{
+    width: 150px;
+}
+.block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px; /* Espacio entre las imágenes */
+}
+  
+.cuadro img {
+    width: 100%; /* Ajusta el tamaño de cada cuadro según tus necesidades */
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro del contenedor */  
+}
+
+.cuadro {
+    border: solid 4px;
+    padding: 21px;
+}
+.cuadro0{
+    background-color: #82B4EE!important;
+}
+.cuadro1 {
+    background-color: #F36870!important; /* Cambia el color de fondo según tus necesidades */
+}
+.header{
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro del contenedor */  
+}
+body{
+    width: 640px;
+}

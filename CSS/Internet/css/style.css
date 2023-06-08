@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body{
+    width: 970px;
+}
+.main-content{
+    width: 80%;
+}
+header img{
+    width:100px;
+}
+header .logUp{
+    display: flex;
+}
+header .logUp a{
+    text-decoration: none;
+    color: #424242;
+}
+header .logUp a {
+    text-decoration: none;
+}
+#blue{
+    color: #195F9A;
+}
+.logdown{
+    /*  */
+    background: linear-gradient(#2E6DA1, #5083AC, #2E6DA1);
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -25px;
+}
+main{
+    display: flex;
+}
+main .advice{
+    width:182px;
+}
+.upperadvice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upperadvice button{
+width: 95%;
+}
+main .header img#home{
+    width: 30px;
+    display: inline-block;
+}
+#RED{
+    color:red;
+}
+
+main .header #top, #med, #bot{
+    display: block;
+    margin: 2px;
+}
+.phone-info{
+    display: contents;
+}
+main .header img#phone{
+    width: 90px;
+    margin-right: 60px;
+}
+button {
+    margin-top: 5px;
+}
+#but1{
+    background: linear-gradient(#5C93BF, #2A6BA3);
+}
+#but2{
+    background: linear-gradient(#ECA345, #EF7900);
+}
+.loweradvice{
+    background-image: url('../img/ad_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 175px;
+}
+.loweradvice p{
+    text-align: center;
+    color:white;
+}
+.loweradvice img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.loweradvice button{
+    display: block;
+    margin: 0 auto;
+}

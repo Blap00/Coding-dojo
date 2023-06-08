@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <div class="form" style="text-align: center;">
+        <form action="">
+            <div class="row">
+                <label>
+                    Nombre: <input type="text" name="name" id="formN">
+                </label>    
+            </div>
+            <div class="row">
+                <label>
+                    Apellido: <input type="text" name="lastName" id="formLN">
+                </label>    
+            </div>
+            <div class="row">
+                <label>
+                    Correo: <input type="email" name="email" id="formE">
+                </label>                   
+            </div>
+            <div class="row">
+                <label>
+                    Contrase&nacute;a: <input type="password" name="password" id="formPI">
+                </label>    
+            </div>
+            <div class="row">
+                <label>
+                    Confirmar: <input type="password" name="password" id="formPC">
+                </label>    
+            </div>
+            <div class="row">
+                <label>
+                    Cumplea&nacute;os: <input type="date" name="cumple" id="formCu">
+                </label>    
+            </div>
+            <div class="row">
+                <label>
+                    Genero: <br><input type="radio" name="password" id="formG1">Hombre. <input type="radio" name="password" id="formG2"> Mujer. <input type="radio" name="password" id="formG3">Otro. 
+                </label>    
+            </div>
+            <div class="row">
+                    <label >Una breve descripcion de ti: </label>
+                    <br> <textarea name="Descrip" id="formDesc" cols="30" rows="10"></textarea>
+
+            </div>
+            <div class="row">
+                <label>
+                    <select name="langPref" id="Preference">
+                        <option value="0">Javascript</option>
+                        <option value="1">PHP</option>
+                        <option value="2">Pyhton</option>
+                        <option value="3" selected>Java</option>
+                    </select>
+                </label>
+            </div>
+            <div class="row">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mi blog ficticio">
+        <title>Mi Blog Ficticio</title>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenidos a mi blog ficticio</h1>
+        </header>
+        <div>
+            <h2>Últimas entradas</h2>
+            <ul>
+                <li>
+                    <a href="#">Título de la entrada 1</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra est quis lacus ultrices, eu feugiat ex gravida. Proin ut mauris eget neque consectetur efficitur.</p>
+                </li>
+                <li>
+                    <a href="#">Título de la entrada 2</a>
+                    <p>Donec in dui eu ligula gravida finibus nec non risus. Ut tempus semper tristique. Duis eu lectus fermentum, tempor elit eget, ultrices sapien.</p>
+                </li>
+                <li>
+                    <a href="#">Título de la entrada 3</a>
+                    <p>Sed eu magna ac purus fringilla malesuada. Suspendisse ultricies velit vitae ipsum tristique eleifend. Vivamus ullamcorper leo sit amet semper feugiat.</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Tabla de contenido</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Artículo 1</td>
+                        <td>John Doe</td>
+                        <td>1 de enero de 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Artículo 2</td>
+                        <td>Jane Smith</td>
+                        <td>15 de febrero de 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Artículo 3</td>
+                        <td>David Johnson</td>
+                        <td>28 de marzo de 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <h3>Encuesta</h3>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br>
+                <label>Intereses:</label><br>
+                <input type="checkbox" id="deportes" name="intereses" value="deportes">
+                <label for="deportes">Deportes</label><br>
+                <input type="checkbox" id="arte" name="intereses" value="arte">
+                <label for="arte">Arte</label><br>
+                <input type="checkbox" id="viajes" name="intereses" value="viajes">
+                <label for="viajes">Viajes</label><br>
+                <label>Opinión:</label><br>
+                <input type="radio" id="buena" name="opinion" value="buena">
+                <label for="buena">Buena</label><br>
+                <input type="radio" id="regular" name="opinion" value="regular">
+                <label for="regular">Regular</label><br>
+                <input type="radio" id="mala" name="opinion" value="mala">
+                <label for="mala">Mala</label><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+.navpers{
+    background-color: aqua;
+}
+.nav-link.active{
+    background-color: aquamarine!important;
+}
+#Mainindex{
+    display: block;
+    margin-left: 19%;
+    /*Se que esto no es correcto pero sirve :D */
+    margin-top: 13%;
+}
+.carr1{
+    margin-top: 3rem;
+    width: 60%;
+    margin-left: 18rem;
+}
+.carr2{
+    margin-top: 3rem;
+    width: 60%;
+    margin-left: 18rem;
+}
+.carr3{
+    margin-top: 3rem;
+    width: 60%;
+    margin-left: 18rem;
+}
+.w-100{
+    height: 300px;
+}
+body{
+    background-color: rgba(0,128,0,0.4);
+    background-image: url(https://img.freepik.com/premium-photo/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg);
+    width: 100%;
+    background-size: 100vw;
+}
+footer {
+    margin-top: auto;
+    padding-top: 10vw;
+}
+.foot1{
+    width: 100vw;
+    height: 15vw;
+    position: fixed;
+    top: 48vw;
+    background-color: rgba(0,0,0,.5);
+}
+.foot2 {
+    width: 100vw;
+    height: 14vw;
+    position: fixed;
+    top: 49vw;
+    background-color: rgba(128, 128, 128, .6);
+}
+.imgli{
+    width: 3.5rem;
+}
+.card1{
+    background-color: rgba(0,128,0,0.4)!important;
+    width: 70vw;
+    margin-left: 16vw;
+
+}
+
+.card1:hover {
+    transition: background-color 0.3s ease;
+    background-color: rgba(0, 128, 0, 1);
+  }
+#spam_p2 {
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+#spam_p1{
+    font-size: unset;
+    font-family: cursive;
+    text-decoration-line: underline;
+}
+/* .card1:hover{
+    background-color: rgba(0,128,0,0.7)!important;
+} */

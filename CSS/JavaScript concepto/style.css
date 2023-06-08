@@ -1,0 +1,101 @@
+
+/* INSIDE MAIN MENU */
+.my-list-first{
+    list-style-type: none;
+    margin-left: -23px;
+}
+.contain-list{
+    margin-left:-25px;
+}
+.padding-zone{
+    padding:10px
+}
+div .mainmenu{
+    background-color: #297D8C;
+    /* margin-right: 1200px; */
+    border-radius: 25px;
+    width:200px;
+}
+div.header{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */ /*EN este caso tenemos que desactivar para que se alinee a la izquierda*/
+}
+
+.my-ul-modify{
+    margin-left: -22px;
+}
+
+.text{
+    background-color: red;
+    width:400px;
+    vertical-align: top;
+}
+/* /INSIDE MAIN MENU */
+/* HEADER */
+.header{
+    background-color: #CF3036;
+    height: 80px;
+    border-radius: 10px;
+}
+.header h1{
+    padding-left: 30px;
+    color: #C2D6EB;
+    align-content: center;
+}
+
+/* INSIDE MAIN MENU */
+
+/* Alinear la lista horizontalmente */
+div .mainmenu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    background-color: #0E1822;
+    width: 400px;
+    vertical-align: top;
+    width: 85%;
+    vertical-align: top;
+    margin-left: 20px;
+  }
+  .text a {
+    color: #64CFC9;
+  }
+  .text span {
+    color: #7E8CF5;
+  }
+  .text  {
+    color: #C2D6EB;
+  }
+  
+  /* /INSIDE MAIN MENU */
+  
+  /* HEADER */
+  .header {
+    background-color: #CF3036;
+    height: 80px;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    padding-left: 30px;
+    color: #C2D6EB;
+    /* align-content: center; */ /* Esta propiedad no es necesaria */
+  }
+  
+  .Main {
+    background-color: #1B335D;
+    width: 60vw;
+  }
+.cerrar{
+    display: inline-flex;
+    margin-top: 20px;
+}  
+.footer{
+    background-color: #5D6673;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 10px;
+}

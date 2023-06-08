@@ -1,0 +1,119 @@
+#gradiente{
+    background-image: linear-gradient(rgb(0, 0, 0),silver);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#img_contacto{
+    width: 10px;
+    height: 10px;
+}
+.cuadrado{
+    background-image: linear-gradient(to right,white,silver);
+    width: 274px;
+    height: 237px;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+div.cuadrado#zonainfe{
+    height: 521px!important;
+}
+.separe.cuadre1{
+    margin-top: 89px;
+}
+.separe.cuadre2{
+    margin-top: 72px;
+}
+.separe.cuadre3{
+    margin-top: 33px;
+}
+p{
+    word-wrap: break-word;
+}
+#img_tecnologias{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.green-button {
+    background-color: rgb(64, 125, 97);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    box-shadow:2px 5px 8px rgba(0, 0, 0, 0.5);   
+    margin-left: 45px;
+  }
+  #about_me {
+    width: 400px;
+    height: auto;
+    border-color: 3px solid gray;
+    vertical-align:middle;
+}
+
+.img-about-section {
+    display: flex;
+    border: solid 1px;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+.img-about-section img {
+    width: 500px; /* Ajusta el ancho según tus necesidades */
+    margin-right: 10px; /* Espacio entre la imagen y el div */
+    height: 335px;
+}
+
+.aboutsection {
+    border: solid 1px;
+    flex-grow: 1; /* Permite que el div ocupe todo el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutsection .headerCard{
+    height: 30px;
+    width: 200px;
+    background-image: linear-gradient(silver, gray,gray,silver);
+}
+.aboutsection .bodyCard{
+    width: 200px;
+    background-color: silver;
+}
+.cuadrosinferior, .cuadroSuperior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cuadroSuperior{
+    padding-top: 22px;
+}
+#Master{
+    font-size: 21px;
+    padding-left: 509px;
+    font-weight: normal;
+}
+.headerCard {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contacto{
+    font-size: 15px;
+    color: black;
+}
+
+.bodyCard {
+    font-size: 16px;
+}
+#fondo{
+    background-image: radial-gradient(rgb(161, 109, 161),black) ;
+    width: 970px;
+}
+#footer{
+    padding-left: 13vw;
+}
+h3{
+    margin-top: 0px;
+    padding: 2%;
+}
