@@ -2,51 +2,58 @@
     margin: 0;
     box-sizing: border-box;
 }
-#div_uno{
-    width: 980px;
-    padding: 5px;
-    margin: 0 auto;
-    margin-top: 15px;
-    background-color: silver;
+.header{
+    background-color: #B3B3B3;
 }
-#div_dos{
-    height: 130px;
-    margin-top: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    background-color: green;
+.main{
+    background-color: #CCCCCC;
 }
-#div_tres{
-    height: 300px;
-    width: 200px;
-    margin-top: 7px;
-    margin-right: 10px;
-    margin-left: 15px;
-    vertical-align: top;
-    display: inline-block;
-    background-color: blue;
+.phonewidth{
+    background-color: #FFFF9A;
 }
-#div_cuatro{
-    height: 418px;
-    width: 716px;
-    padding: 18px;
-    margin-top: 7px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    display: inline-block;
-    background-color: red;
+
+@media screen and (min-width: 1024px) {
+    .screen-size-info .text-desktop::after {
+        font-weight: bold;
+    }
+    
+    .screen-size-info .text-tablet {
+        display: none;
+    }
+    .screen-size-info .text-phone {
+        display: none;
+    }
+    .screen-size-info .text-desktop::after{
+        content: "Greater than or equal to 1024px";
+    }
 }
-.cuadrados_amarillos{
-    height: 195px;
-    width: 208px;
-    margin-right: 10px;
-    display: inline-block;
-    background-color: yellow;
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .screen-size-info .text-tablet::after {
+        font-weight: bold;
+    }
+    .screen-size-info .text-desktop {
+        display: none;
+    }
+    .screen-size-info .text-phone {
+        display: none;
+    }
+    .screen-size-info .text-tablet::after{
+        content: "between 481px and 1023px";
+    }
 }
-#div_ocho{
-    height: 115px;
-    width: 652px;
-    margin-top: 24px;
-    background-color: purple;
+
+@media screen and (max-width: 480px) {
+    .screen-size-info .text-phone::after {
+        font-weight: bold;
+    }
+    .screen-size-info .text-desktop {
+        display: none;
+    }
+    .screen-size-info .text-tablet {
+        display: none;
+    }
+    .screen-size-info .text-phone::after{
+        content: "less than or equal to 480px";
+    }
 }
