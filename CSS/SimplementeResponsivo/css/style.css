@@ -1,0 +1,47 @@
+.header{
+    background-color: #B3B3B3;
+}
+.main{
+    background-color: #CCCCCC;
+}
+.phonewidth{
+    background-color: #FFFF9A;
+}
+.text-desktop,
+.text-tablet,
+.text-phone{
+    display: none;
+}
+.textini{
+    font-weight: lighter;
+}
+/* Aquí van los estilos CSS con las media queries */
+@media screen and (min-width: 1024px) {
+    .screen-size-info .text-desktop {
+        font-weight: bold;
+        display: block;
+    }
+    .screen-size-info .text-desktop::after {
+        content: "Greater than or equal to 1024px";
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .screen-size-info .text-tablet {
+        font-weight: bold;
+        display: block;
+    }
+    .screen-size-info .text-tablet::after {
+        content: "Between 481px and 1023px";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .screen-size-info .text-phone {
+        font-weight: bold;
+        display: block;
+    }
+    .screen-size-info .text-phone::after {
+        content: "Less than or equal to 480px";
+    }
+}
