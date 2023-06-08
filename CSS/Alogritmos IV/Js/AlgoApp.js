@@ -1,5 +1,6 @@
 //Dados un array y un valor Y, cuenta e imprime (print) el número de valores del array que sean mayores que Y.
 console.log("EJERCICIO 1");
+
 function contarMayores(array, Y) {
     let contador = 0;
     for (let i = 0; i < array.length; i++) {
@@ -14,7 +15,7 @@ function contarMayores(array, Y) {
 const array = [1, 3, 5, 7, 9];
 const Y = 4;
 contarMayores(array, Y);
-  
+
 console.log("EJERCICIO 2");
 //Dado un array, imprime los valores máximos (max), mínimos (min) y promedio (average) para el array. 
 function calcularEstadisticas(arr) {
@@ -26,11 +27,11 @@ function calcularEstadisticas(arr) {
     console.log("Mínimo:", minimum); // Imprime el valor mínimo.
     console.log("Promedio:", average); // Imprime el promedio.
 }
-  
+
 // Ejemplo de la funcion:
 const arr = [10, 5, 7, 3, 9];
 calcularEstadisticas(arr);
-  
+
 console.log("EJERCICIO 3");
 //Dado un array de números, crea una función que dé como resultado un nuevo array donde los valores negativos se reemplacen por el texto (string) ‘Dojo’. Por ejemplo, reemplazarNegativos([1,2,-3,-5,5]) debiera devolver [1,2, “Dojo”, “Dojo”, 5].
 function reemplazarNegativos(arr1) {
@@ -51,13 +52,12 @@ function removerRango(arr, inicio, fin) {
     // Filtra los valores del array que se encuentren fuera del rango dado por los índices inicio y fin
     // Utilizamos el método `filter` para recorrer cada elemento del array y mantener solo aquellos cuyos índices cumplan la condición
     const nuevoArray = arr.filter((valor, indice) => indice < inicio || indice > fin);
-    
+
     // Devuelve el nuevo array resultante
     return nuevoArray;
-  }
-  
-  // Ejemplo de uso:
-  const arr2 = [20, 30, 40, 50, 60, 70];
-  const nuevoArray = removerRango(arr2, 2, 4);
-  console.log(nuevoArray);
-  
+}
+
+// Ejemplo de uso:
+const arr2 = [20, 30, 40, 50, 60, 70];
+const nuevoArray = removerRango(arr2, 2, 4);
+console.log(nuevoArray);
