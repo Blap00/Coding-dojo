@@ -53,11 +53,27 @@ function reemplazarNegativos(arr1) {
      */
     // Utiliza el método map() para crear un nuevo array basado en el array original
     const newArray = arr1.map((num) => (num < 0 ? "Dojo" : num));
-    // Si el número es negativo, se reemplaza por el string "Dojo", de lo contrario se mantiene el número original
     return newArray; // Retorna el nuevo array
+    /*
+    let a=[1,4,2,3];
+
+    console.log(a.map);
+
+
+    function map(num){
+        if(num<0){
+            console.log('dojo')
+        } else{
+            num
+        }
+    }
+        
+    */
+    // Si el número es negativo, se reemplaza por el string "Dojo", de lo contrario se mantiene el número original
+
 }
 // Ejemplo de esta funcion:
-const arr1 = [1, 2, -3, -5, 5];
+const arr1 = [1, 2, -3, -5, 5]; 
 const newArray = reemplazarNegativos(arr1); // Llama a la función reemplazarNegativos y pasa el array como argumento
 console.log(newArray); // Imprime el nuevo array en la consola
 
@@ -73,6 +89,6 @@ function removerRango(arr, inicio, fin) {
 }
 
 // Ejemplo de uso:
-const arr2 = [20, 30, 40, 50, 60, 70];
-const nuevoArray = removerRango(arr2, 2, 4);
+const arr2 = [20, 30, 40, 50, 60, 70]; //SE PUEDE AHORRAR
+const nuevoArray = removerRango(arr2, 2, 4);//const nuevoArray = removerRango([20, 30, 40, 50, 60, 70], 2, 4);
 console.log(nuevoArray);
