@@ -1,0 +1,96 @@
+.bg-gray{
+    background-color: rgb(26,26,26);
+}
+.bg-butt{
+    background-image: linear-gradient(#515151, #292929);
+}
+.c-white{
+    color: #A3A3A3;
+}
+nav a span:hover{
+    transition: .4s;
+    color: #DBDBDB;
+}
+a.active span{
+    color: #DBDBDB;
+}
+ul.secdiv li{
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+header{
+    width: 100%!important;
+}
+.container-fluid#CARDSFOTOS img{
+    width: 35px;
+}
+.container-fluid#CARDSFOTOS .card-group .card{
+    background-color: #1A1A1A;
+}
+/* #9C999E */
+/* card-text */
+
+.container-fluid#CARDSFOTOS .card-group .card .card-title{
+    color: #DD7127;
+    font-size: 1.2rem;
+}
+.container-fluid#CARDSFOTOS .card-group .card .card-text{
+    color: #9C999E;
+    font-size: .9rem;
+}
+.container-fluid#bodyInit .card, .container-fluid#bodyInit .card-body,.container-fluid#bodyInit{
+    background-color: transparent;    
+}
+.container-fluid#bodyInit p{
+    width: 70%;
+
+}
+button#btn-card-buy{
+    margin-right: 68px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 17%;
+}
+body{
+    background-image: url('../IMG/BackPhotoADD.png');
+}
+.container-fluid#bodyInit h3{
+    color: #F1F1F1;
+}
+.container-fluid#bodyInit p{
+    color: #A9A198;
+}
+.container-fluid#Footerfotos{
+    background-color: #1A1A1A;
+}
+.container-fluid#Footerfotos .card{
+    background-color: transparent;
+}
+.container-fluid#Footerfotos h5 {
+    color: #F0F0EE;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.container-fluid#Footerfotos h5 span#saltoderecha {
+    margin-right: 7vw;
+}
+.container-fluid#Footerfotos h5 span#saltoderecha a{
+    text-decoration: none;
+    color: #DD7127;
+    font-size: 1rem;
+}
+.container-fluid#Footerfotos h5 span#saltoizquieda {
+    margin-left: 4vw;
+}
+.paragraph{
+    color: #F0F0EE;
+}
+.tittlepar{
+    color: #DD7127!important;
+}
+.backto{
+    text-align: end;
+}
