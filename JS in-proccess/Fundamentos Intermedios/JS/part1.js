@@ -42,14 +42,14 @@ fibonacci(4) = 3 (1+2), fibonacci(5) = 5 (2+3), fibonacci(6) = 8 (3+5), fibonacc
 recursión. Si no sabes qué es una recursión, no te preocupes puesto que vamos a introducir este concepto en la Parte 2 de 
 esta actividad.
 */
-function fibonacci(index) {
-    if (index === 0) {
+function fibonacci(num) {
+    if (num === 0) {
         return 0;
     }
     let num1 = 0;
     let num2 = 1;
     let fibnum = 1;
-    for (let i = 2; i <= index; i++) {
+    for (let i = 2; i <= num; i++) {
         fibnum = num1 + num2;
         num1 = num2;
         num2 = fibnum;
