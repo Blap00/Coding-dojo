@@ -3,19 +3,26 @@ function generarArregloAleatorio() {
     var arregloAleatorio = [];
     for (var i = 0; i < 10; i++) {
         var numeroAleatorio = Math.floor(Math.random() * 20) + 1;
-        arregloAleatorio.push(numeroAleatorio);
+        if(!arregloAleatorio.includes(numeroAleatorio)){
+            arregloAleatorio.push(numeroAleatorio);
+        }
+        else{
+            i--;
+        }
     }
     return arregloAleatorio;
 }
 
 // Función para comparar dos arreglos y contar las coincidencias
 function compararArreglos(arr1, arr2) {
-    var coincidencias = 0;
-    for (var i = 0; i < 10; i++) {
-        if (arr1[i] === arr2[i]) {
-            coincidencias++;
-        }
-    }
+    let coincidencias = arr1.filter(arrayinicial => arr2.includes(arrayinicial)) //los genera como array, si un numero repite lo imprime
+    // var coincidencia = 0;
+    // for (var i = 0; i < arr1.length; i++) {
+    //     if(arr1.includes(arr2[i])){
+    //         coincidencia++;   
+    //     }
+    // }
+    // console.log(coincidencia);
     return coincidencias;
 }
 
@@ -36,6 +43,6 @@ function compararNumeros(numeros) {
 }
 
 // Ejemplo de uso de la función compararNumeros con un arreglo de 10 números
-var numeros = [4, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 compararNumeros(numeros);
 
