@@ -2,11 +2,8 @@
 Fibonacci Recursivo;
 */
 function fib(n) {
-    if (n === 0) {
-        return 0; //FIBONACCI mientras el valor sea 0 se mantiene igual
-    }
-    if (n === 1) {
-        return 1; //FIBONACCI mientras el valor sea 1 se mantiene igual
+    if (n <= 1) {
+        return n; //FIBONACCI mientras el valor sea 0 se mantiene igual
     }
     return fib(n - 1) + fib(n - 2); //Si ninguna se cumple, entonces se hace el calculo n-1 + n-2
 }
