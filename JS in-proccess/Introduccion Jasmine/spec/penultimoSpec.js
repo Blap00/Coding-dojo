@@ -52,3 +52,24 @@ describe("sumFirstLast", function() {
 });
 
 
+function sumMaxMin(arr){
+    if(Array.isArray(arr)){
+        if(arr.length>=2){
+            return Math.max(...arr)+Math.min(...arr);
+        }
+        else{
+            return "No se puede, digitos muy minimos!";
+        }
+    }else{
+        return "objeto entregado no es un ARRAY"
+    }
+
+}
+describe("sumMaxMin", function() { 
+    it("should return 11 when we pass [1,3,10] as an argument", function() { 
+        expect(sumMaxMin([1,3,10])).toEqual(11); 
+    }); 
+    it("should return -12 when we pass [-2,-5,-10] as an argument", function() { 
+        expect(sumMaxMin([-2,-5,-10])).toEqual(-12); 
+    }); 
+});
