@@ -1,6 +1,46 @@
 //TRABAJAMOS AQUI ABAJO
 document.addEventListener("DOMContentLoaded", function () {
-
+    //MODIFICADO 
+    /*
+    var perros= [
+        {
+            imagen: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
+            nombre: "Arcanine",
+            pelaje: "Liso",
+            color_de_pelaje: "Marrón",
+            color_de_ojos: "Negro",
+            tamaño_en_metros: 1.9,
+            peso_en_kg: 155,
+            edad_en_años: 2,
+            dormir: function () {
+                return "Estoy durmiendo...";
+            },
+            lanzallamas: function (p2) {
+                return this.name + "ha usado lanzallamas, no es muy eficaz"
+            }
+        },
+        {
+            imagen: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png",
+            nombre: "Ninetales",
+            pelaje: "Liso",
+            color_de_pelaje: "amarillo",
+            color_de_ojos: "Rojos",
+            tamaño_en_metros: 1.1,
+            peso_en_kg: 19.9,
+            edad_en_años: 2,
+            dormir: function () {
+                return "Estoy durmiendo...";
+            },
+            lanzallamas: function (p2) {
+                return this.nombre + "ha usado lanzallamas, no es muy eficaz"
+            }
+        }
+    ]
+    
+    console.log(perros);
+    console.log(perros[0].nombre);
+    console.log(perros[1].nombre);
+    */
     //CLASES
     const Perro1 = {
         imagen: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
