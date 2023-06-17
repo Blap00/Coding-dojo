@@ -1,0 +1,65 @@
+* {
+    margin: auto;
+    padding: 0px;
+}
+
+body {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/850/283/741/pokemon-video-games-pixels-artwork-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#img {
+    height: 200px;
+    width: 30vw;
+    margin-right: -25vw;
+    margin-left: 10%;
+}
+
+.row {
+    display: flex;
+}
+
+
+#descripcion {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 500px;
+    height: 340px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 2px 2px 4px black;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 47px;
+    background-image: linear-gradient(rgb(165, 42, 42), #Fdce0f);
+    margin-left: 40%;
+}
+
+#description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 500px;
+    height: 340px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 2px 2px 4px black;
+    margin: auto;
+    padding-left: 20px;
+    line-height: 47px;
+    background-image: linear-gradient(blue, violet);
+    margin-left: 40%;
+    margin-top: 10px;
+
+}
+
+#imagen1 {
+    width: 400px;
+    margin-top: -120px;
+}
+
+#imagen2 {
+    width: 360px;
+    margin-top: -80px;
+}
