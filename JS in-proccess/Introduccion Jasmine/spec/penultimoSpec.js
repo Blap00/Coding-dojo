@@ -4,11 +4,12 @@
 //sum1toN(255) devuelve la suma de todos los números de 1 a 255
 function Sum1toN(n){
     var suma = 0;
-    if(Number.isInteger(n)){
+    if(!Number.isInteger(n)){
         
-    }
-    for (let i = 1; i <= n; i++) {
-        suma += i;
+    }else{
+        for (let i = 1; i <= n; i++) {
+            suma += i;
+        }    
     }
     return suma;
 }

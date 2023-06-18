@@ -94,9 +94,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     setData(2);
     //INTERACCION CSS
+    $('#but1').click(function () {
+
+    });
 });
-// $(document).ready(function () {
-//     $('#but1').click(function () {
-//         alert("GRITA")
-//     });
-// })
+$(document).ready(function () {
+    $('#but1').click(function () {
+        
+    });
+})
