@@ -1,97 +1,246 @@
-*{
+/*CSS reset settings here*/
+* {
     margin: 0px;
     padding: 0px;
-    border: 0px;
-}
-body{
-    width: 970px;
-}
-.main-content{
-    width: 80%;
-}
-header img{
-    width:100px;
-}
-header .logUp{
-    display: flex;
-}
-header .logUp a{
-    text-decoration: none;
-    color: #424242;
-}
-header .logUp a {
-    text-decoration: none;
-}
-#blue{
-    color: #195F9A;
-}
-.logdown{
-    /*  */
-    background: linear-gradient(#2E6DA1, #5083AC, #2E6DA1);
-    padding-top: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -25px;
-}
-main{
-    display: flex;
-}
-main .advice{
-    width:182px;
-}
-.upperadvice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.upperadvice button{
-width: 95%;
-}
-main .header img#home{
-    width: 30px;
-    display: inline-block;
-}
-#RED{
-    color:red;
 }
 
-main .header #top, #med, #bot{
-    display: block;
-    margin: 2px;
+#wrapper {
+    width: 790px;
+    background-color: #145274;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7pt;
 }
-.phone-info{
-    display: contents;
+
+.header {
+    background-color: white;
 }
-main .header img#phone{
-    width: 90px;
-    margin-right: 60px;
+
+.headerTxt {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 29pt;
+    font-family: sans-serif;
+    margin-bottom: 15px;
 }
-button {
-    margin-top: 5px;
+
+.globe {
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    vertical-align: top;
 }
-#but1{
-    background: linear-gradient(#5C93BF, #2A6BA3);
+
+.banner {
+    background: linear-gradient(#076B9E, steelblue, #076B9E);
+    color: white;
+    padding: 10px;
+    font-size: 20pt;
+    font-family: sans-serif;
+    margin-top: -15px;
 }
-#but2{
-    background: linear-gradient(#ECA345, #EF7900);
+
+.body {
+    box-sizing: content-box;
+    background: linear-gradient(#E4E4E4, white 30%);
 }
-.loweradvice{
-    background-image: url('../img/ad_background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 175px;
+
+.sidePanel {
+    height: 450px;
+    width: 140px;
+    background: linear-gradient(#E4E4E4, white);
+    display: inline-block;
+    vertical-align: top;
 }
-.loweradvice p{
+
+#sideSubPanel1 {
+    margin-top: 15px;
+    border-bottom: 1px solid grey;
+    padding: 15px 0px;
+}
+
+#sideSubpanel2 {
+    background-image: url("../img/ad_background.png");
+    height: 228px;
+    margin-top: 15px;
+    padding: 15px 3px;
+}
+
+.bodycontent {
+    height: 300px;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+.bodyHead {
+    border-bottom: 2px solid grey;
+}
+
+.contact {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#phone {
+    height: 30px;
+    width: 30px;
+    margin: 5px 3px;
+}
+
+.phone {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.txtTitle {
+    color: steelblue;
+    font-size: 9pt;
+    margin-top: 3px;
+    margin-right: 365px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.txt6 {
+    font-size: 6pt;
+}
+
+.txt12 {
+    font-size: 14pt;
+}
+
+.bodyCont1 {
+    margin: 7px 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bodyCont2 {
+    border-left: 3px solid steelblue;
+    border-top: 3px solid steelblue;
+    border-right: 3px solid steelblue;
+}
+
+.bodyCont3 {
+    width: 400px;
+    margin: 7px 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main2 {
+    background-color: ivory;
+    padding: 10px;
+}
+
+.vidBttn {
+    background-color: steelblue;
+    color: white;
+    border-radius: 5px;
+    width: 135px;
+    height: 25px;
+    border: none;
+    margin-left: 2px;
+    margin-bottom: 1px;
+    margin-top: 15px;
+}
+
+.resBttn {
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+    width: 135px;
+    height: 25px;
+    border: none;
+    margin-left: 2px;
+}
+
+.coral {
+    color: coral;
+}
+
+.white {
+    color: white;
+}
+
+.center {
     text-align: center;
-    color:white;
 }
-.loweradvice img{
-    display: block;
-    width: 90%;
-    margin: 0 auto;
+
+#ninja {
+    height: 100px;
+    width: 70px;
+    margin-left: 35px;
 }
-.loweradvice button{
-    display: block;
-    margin: 0 auto;
+
+#clsr {
+    height: 70px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+#home {
+    height: 15px;
+    width: 15ßpx;
+}
+
+#lng {
+    height: 70px;
+    width: 80px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#learnMore {
+    background-color: skyblue;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+}
+
+.blue {
+    color: #00C0DD;
+}
+
+.steelblue {
+    color: steelblue;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 {
+    color: steelblue;
+    margin: 2px 0px;
+}
+
+p {
+    margin: 3px 0px;
+}
+
+li {
+    margin: 3px 0px;
+}
+
+h4 {
+    margin: 2px 0px;
+}
+
+ol {
+    list-style-position: inside;
+    margin: 0px 0px 0px 10px;
+}
+
+ul {
+    list-style-position: inside;
+    margin: 0px 0px 0px 10px;
 }
