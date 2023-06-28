@@ -1,0 +1,160 @@
+package rompecabezas;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Random;
+
+public class rompeCabezas {
+    public static void main(String[] args) {
+        // Ejercicio 1
+        int[] numbers = {3, 5, 1, 2, 7, 9, 8, 13, 25, 32};
+        System.out.println("Suma de todos los números: " + sumArray(numbers));
+        int[] greaterThanTen = getNumbersGreaterThanTen(numbers);
+        System.out.println("Números mayores a 10: ");
+        printArray(greaterThanTen);
+
+        // Ejercicio 2
+        String[] names = {"Nancy", "Jinichi", "Fujibayashi", "Momochi", "Ishikawa"};
+        System.out.println("Nombres con más de 5 caracteres: ");
+        String[] longNames = getNamesLongerThanFiveChars(names);
+        printArray(longNames);
+
+        // Ejercicio 3
+        char[] alphabet = generateAlphabetArray();
+        shuffleArray(alphabet);
+        System.out.println("Última letra del arreglo: " + alphabet[alphabet.length - 1]);
+        System.out.println("Primera letra del arreglo: " + alphabet[0]);
+        if (isVowel(alphabet[0])) {
+            System.out.println("La primera letra es una vocal");
+        }
+
+        // Ejercicio 4
+        int[] randomNumbers = generateRandomArray(10, 55, 100);
+        System.out.println("Arreglo de números aleatorios: ");
+        printArray(randomNumbers);
+
+        // Ejercicio 5
+        int[] sortedRandomNumbers = generateSortedRandomArray(10, 55, 100);
+        System.out.println("Arreglo de números aleatorios ordenados: ");
+        printArray(sortedRandomNumbers);
+        System.out.println("Valor mínimo: " + sortedRandomNumbers[0]);
+        System.out.println("Valor máximo: " + sortedRandomNumbers[sortedRandomNumbers.length - 1]);
+
+        // Ejercicio 6
+        String randomString = generateRandomString(5);
+        System.out.println("Cadena aleatoria de 5 caracteres: " + randomString);
+
+        // Ejercicio 7
+        String[] randomStrings = generateRandomStringArray(10, 5);
+        System.out.println("Arreglo de cadenas aleatorias: ");
+        printArray(randomStrings);
+    }
+
+    public static int sumArray(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return sum;
+    }
+
+    public static int[] getNumbersGreaterThanTen(int[] arr) {
+        ArrayList<Integer> result = new ArrayList<>();
+        for (int num : arr) {
+            if (num > 10) {
+                result.add(num);
+            }
+        }
+        return convertToIntArray(result);
+    }
+
+    public static String[] getNamesLongerThanFiveChars(String[] arr) {
+        ArrayList<String> result = new ArrayList<>();
+        for (String name : arr) {
+            if (name.length() > 5) {
+                result.add(name);
+            }
+        }
+        return result.toArray(new String[0]);
+    }
+
+    public static char[] generateAlphabetArray() {
+        char[] alphabet = new char[26];
+        for (int i = 0; i < 26; i++) {
+            alphabet[i] = (char) ('a' + i);
+        }
+        return alphabet;
+    }
+
+    public static void shuffleArray(char[] arr) {
+        ArrayList<Character> list = new ArrayList<>();
+        for (char c : arr) {
+            list.add(c);
+        }
+        Collections.shuffle(list);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = list.get(i);
+        }
+    }
+
+    public static boolean isVowel(char c) {
+        c = Character.toLowerCase(c);
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
+    }
+
+    public static int[] generateRandomArray(int length, int min, int max) {
+        int[] arr = new int[length];
+        Random rand = new Random();
+        for (int i = 0; i < length; i++) {
+            arr[i] = rand.nextInt(max - min + 1) + min;
+        }
+        return arr;
+    }
+
+    public static int[] generateSortedRandomArray(int length, int min, int max) {
+        int[] arr = generateRandomArray(length, min, max);
+        Arrays.sort(arr);
+        return arr;
+    }
+
+    public static String generateRandomString(int length) {
+        Random rand = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            char c = (char) (rand.nextInt(26) + 'a');
+            sb.append(c);
+        }
+        return sb.toString();
+    }
+
+    public static String[] generateRandomStringArray(int length, int stringLength) {
+        String[] arr = new String[length];
+        for (int i = 0; i < length; i++) {
+            arr[i] = generateRandomString(stringLength);
+        }
+        return arr;
+    }
+
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printArray(String[] arr) {
+        for (String str : arr) {
+            System.out.print(str + " ");
+        }
+        System.out.println();
+    }
+
+    public static int[] convertToIntArray(ArrayList<Integer> list) {
+        int[] arr = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            arr[i] = list.get(i);
+        }
+        return arr;
+    }
+}
