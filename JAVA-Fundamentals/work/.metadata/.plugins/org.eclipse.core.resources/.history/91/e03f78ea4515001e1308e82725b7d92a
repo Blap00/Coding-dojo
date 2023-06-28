@@ -1,0 +1,19 @@
+package TeoremaDePitagoras;
+//Import methods from util.scanner
+import java.util.Scanner;
+//MAIN
+public class Pitagoras {
+    public static void main(String[] args) {
+        PitagorasTest pitagoras = new PitagorasTest();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese la longitud del primer cateto: ");
+        int catetoA = scanner.nextInt();
+        System.out.println("Ingrese la longitud del segundo cateto: ");
+        int catetoB = scanner.nextInt();
+        double hipotenusa = pitagoras.calcularHipotenusa(catetoA,catetoB);
+        System.out.println("La hipotenusa entregada por los catetos es de; "+hipotenusa);        
+        // Cerrar el Scanner
+        scanner.close();
+    }
+
+}
