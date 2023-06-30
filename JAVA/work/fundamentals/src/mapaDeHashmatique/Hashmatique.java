@@ -1,30 +1,27 @@
 package mapaDeHashmatique;
-
 import java.util.HashMap;
-import java.util.Map;
 
 public class Hashmatique {
     public static void main(String[] args) {
         // Crear el tracklist HashMap
-        Map<String, String> trackList = new HashMap<>();
+        HashMap<String, String> trackList = new HashMap<>();
 
         // Agregar canciones al tracklist
-        trackList.put("Habra que probar!", "Letra de la canción uno porque si!");
-        trackList.put("funcionara?", "Letra de la canción tengo sueño!");
-        trackList.put("Como se usa esto?", "Letra de la canción tambien hambre");
-        trackList.put("Canciones", "Letra de la canción larga");
+        trackList.put("Canción original", "Letra de la canción: Como funcionaran los HASHMAP?"); // Agregar la canción original con su letra
+        trackList.put("Canción unica", "Letra de la canción: No lo averiguo al 100 aún"); // Agregar una canción única con su letra
+        trackList.put("Canción Especial", "Letra de la canción: Pero estoy seguro que voy cerca"); // Agregar una canción especial con su letra
+        trackList.put("Canción Tengo hambre", "Letra de la canción: Pero tengo demasiado sueño:c"); // Agregar una canción de "Tengo hambre" con su letra
 
         // Extraer una canción por su título
-        String tituloCancion = "funcionara?";
-        String letraCancion = trackList.get(tituloCancion);
-        System.out.println("Letra de la canción \"" + tituloCancion + "\": " + letraCancion);
+        String tituloCancion = "Canción unica"; // Definir el título de la canción que se desea extraer
+        String letraCancion = trackList.get(tituloCancion); // Obtener la letra de la canción del tracklist utilizando el título
+        System.out.println("Letra de la canción \"" + tituloCancion + "\": " + letraCancion); // Imprimir la letra de la canción
 
         // Imprimir todos los nombres de las pistas y las letras
         System.out.println("Tracklist:");
-        for (Map.Entry<String, String> entry : trackList.entrySet()) {
-            String titulo = entry.getKey();
-            String letra = entry.getValue();
-            System.out.println(titulo + ": " + letra);
+        for (String titulo : trackList.keySet()) { // Iterar a través de las claves del tracklist
+            String letra = trackList.get(titulo); // Obtener la letra de la canción utilizando el título como clave
+            System.out.println(titulo + ": " + letra); // Imprimir el título de la canción y su letra
         }
     }
 }
