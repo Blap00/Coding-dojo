@@ -6,7 +6,7 @@ function obtenerDel1Al255() {
     }
     return arr;
 }
-
+    
 // Consigue pares hasta 1000
 function sumaParesHasta1000() {
     var suma = 0;
