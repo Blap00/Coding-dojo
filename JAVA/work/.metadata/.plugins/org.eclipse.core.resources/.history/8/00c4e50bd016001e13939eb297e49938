@@ -1,0 +1,219 @@
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class JavascriptI {
+
+    // EJERCICIO 1
+    // Imprime los números del 1 al 255
+    public static int[] print1To255() {
+        int[] arr = new int[255];
+        for (int i = 1; i <= 255; i++) {
+            arr[i - 1] = i;
+        }
+        return arr;
+    }
+
+    // EJERCICIO 2
+    // Calcula la suma de los números pares del 1 al 1000
+    public static int sumaParesHasta1000() {
+        int sum = 0;
+        for (int i = 1; i <= 1000; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
+    // EJERCICIO 3
+    // Calcula la suma de los números impares del 1 al 5000
+    public static int sumaImparesHasta5000() {
+        int sum = 0;
+        for (int i = 1; i <= 5000; i++) {
+            if (i % 2 != 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
+    // EJERCICIO 4
+    // Calcula la suma de todos los valores en un array dado
+    public static int sumaArray(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return sum;
+    }
+
+    // EJERCICIO 5
+    // Encuentra el valor máximo en un array dado
+    public static int encontrarMayor(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    // EJERCICIO 6
+    // Calcula el promedio de los valores en un array dado
+    public static double calcularPromedio(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return (double) sum / arr.length;
+    }
+
+    // EJERCICIO 7
+    // Genera un array con los números impares del 1 al 50
+    public static int[] obtenerImparesHasta50() {
+        List<Integer> impares = new ArrayList<>();
+        for (int i = 1; i <= 50; i += 2) {
+            impares.add(i);
+        }
+        return convertIntegerListToArray(impares);
+    }
+
+    // EJERCICIO 8
+    // Cuenta la cantidad de números mayores que un valor dado en un array
+    public static int contarMayoresQueY(int[] arr, int y) {
+        int count = 0;
+        for (int num : arr) {
+            if (num > y) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // EJERCICIO 9
+    // Eleva al cuadrado todos los valores en un array dado
+    public static int[] cuadrados(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = arr[i] * arr[i];
+        }
+        return arr;
+    }
+
+    // EJERCICIO 10
+    // Reemplaza los números negativos en un array dado por cero
+    public static int[] reemplazarNegativosPorCero(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                arr[i] = 0;
+            }
+        }
+        return arr;
+    }
+
+    // EJERCICIO 11
+    // Calcula el valor máximo, mínimo y promedio de un array dado
+    public static double[] maxMinAvg(int[] arr) {
+        int max = arr[0];
+        int min = arr[0];
+        int sum = 0;
+        for (int num : arr) {
+            if (num > max) {
+                max = num;
+            }
+            if (num < min) {
+                min = num;
+            }
+            sum += num;
+        }
+        double avg = (double) sum / arr.length;
+        return new double[]{max, min, avg};
+    }
+
+    // EJERCICIO 12
+    // Intercambia el primer y último valor de un array dado
+    public static int[] intercambiarValores(int[] arr) {
+        if (arr.length > 1) {
+            int temp = arr[0];
+            arr[0] = arr[arr.length - 1];
+            arr[arr.length - 1] = temp;
+        }
+        return arr;
+    }
+
+    // EJERCICIO 13
+    // Convierte los números negativos en un array dado a la cadena "Dojo"
+    public static String[] convertirNegativosADojo(int[] arr) {
+        String[] result = new String[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                result[i] = "Dojo";
+            } else {
+                result[i] = String.valueOf(arr[i]);
+            }
+        }
+        return result;
+    }
+
+    // Método de utilidad para convertir una lista de enteros en un array de enteros
+    private static int[] convertIntegerListToArray(List<Integer> list) {
+        int[] arr = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            arr[i] = list.get(i);
+        }
+        return arr;
+    }
+
+    // Método de utilidad para imprimir una línea separadora
+    private static void printSeparatorLine() {
+        System.out.println("---------------------------------------");
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {2, 4, 6, 8, 10};
+
+        int[] result1 = print1To255();
+        int result2 = sumaParesHasta1000();
+        int result3 = sumaImparesHasta5000();
+        int result4 = sumaArray(numbers);
+        int result5 = encontrarMayor(numbers);
+        double result6 = calcularPromedio(numbers);
+        int[] result7 = obtenerImparesHasta50();
+        int result8 = contarMayoresQueY(numbers, 5);
+        int[] result9 = cuadrados(numbers);
+        int[] result10 = reemplazarNegativosPorCero(numbers);
+        double[] result11 = maxMinAvg(numbers);
+        int[] result12 = intercambiarValores(numbers);
+        String[] result13 = convertirNegativosADojo(numbers);
+
+        System.out.println("Del 1 al 255: " + Arrays.toString(result1));
+        printSeparatorLine();
+        System.out.println("Suma de pares hasta 1000: " + result2);
+        printSeparatorLine();
+        System.out.println("Suma de impares hasta 5000: " + result3);
+        printSeparatorLine();
+        System.out.println("Suma del array " + Arrays.toString(numbers) + ": " + result4);
+        printSeparatorLine();
+        System.out.println("Mayor valor del array " + Arrays.toString(numbers) + ": " + result5);
+        printSeparatorLine();
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        System.out.println("Promedio del array " + Arrays.toString(numbers) + ": " + decimalFormat.format(result6));
+        printSeparatorLine();
+        System.out.println("Impares hasta 50: " + Arrays.toString(result7));
+        printSeparatorLine();
+        System.out.println("Cantidad de números mayores que 5 en el array " + Arrays.toString(numbers) + ": " + result8);
+        printSeparatorLine();
+        System.out.println("Cuadrados del array " + Arrays.toString(numbers) + ": " + Arrays.toString(result9));
+        printSeparatorLine();
+        System.out.println("Reemplazar negativos por cero en el array " + Arrays.toString(numbers) + ": " + Arrays.toString(result10));
+        printSeparatorLine();
+        System.out.println("Máximo, mínimo y promedio del array " + Arrays.toString(numbers) + ": " + Arrays.toString(result11));
+        printSeparatorLine();
+        System.out.println("Intercambiar primer y último valor en el array " + Arrays.toString(numbers) + ": " + Arrays.toString(result12));
+        printSeparatorLine();
+        System.out.println("Convertir negativos a 'Dojo' en el array " + Arrays.toString(numbers) + ": " + Arrays.toString(result13));
+        printSeparatorLine();
+    }
+}

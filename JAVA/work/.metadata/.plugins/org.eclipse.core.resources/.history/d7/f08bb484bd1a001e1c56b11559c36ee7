@@ -1,0 +1,49 @@
+package com.codingDojo.bankAccount;
+
+import java.util.Random;
+
+public class BankAccount{
+	private String numAccount;
+	private double salCuenCorriente;
+	private double salCuenAhorros;
+	
+	private static int cantCuentas;
+	private static double totalCuentas;
+	//CONSTRUCTOR
+	public BankAccount(){
+		this.numAccount= generateAccountNumber();
+		cantCuentas++;
+	}
+	//GET AND SET
+	public double getSalCuenCorriente() {
+		return salCuenCorriente;
+	}
+
+	public void setSalCuenCorriente(double salCuenCorriente) {
+		this.salCuenCorriente = salCuenCorriente;
+	}
+
+	public double getSalCuenAhorros() {
+		return salCuenAhorros;
+	}
+
+	public void setSalCuenAhorros(double salCuenAhorros) {
+		this.salCuenAhorros = salCuenAhorros;
+	}
+	//METODOS ESPECIFICOS
+	private String generateAccountNumber() {
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 10; i++) {
+            sb.append(random.nextInt(9));
+        }
+        return sb.toString();
+    }
+	private static void depositoCuentas(String cuenta) {
+		if(cuenta=="Corriente"||cuenta=="corriente"){
+	}
+	
+
+	
+	
+}

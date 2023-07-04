@@ -1,0 +1,8 @@
+package com.CodingDojo.GuardiaZoologicoP1;
+
+public class Gorilla{
+	Mammal energ= new Mammal(100);
+	public void throwSomething() {
+		
+	}
+}

@@ -1,0 +1,72 @@
+package com.CodingDojo.GuardiaZoologicoP2;
+
+import javax.sound.sampled.*;
+import java.io.File;
+
+public class Bat {
+    private int energy;
+    private Clip flyClip;
+    private Clip eatClip;
+    private Clip attackClip;
+
+    public Bat(int energy) {
+        this.energy = energy;
+        loadSounds();
+        System.out.println(getEnergy());
+    }
+
+    private void loadSounds() {
+        try {
+            File flyFile = new File("src/com/CodingDojo/GuardiaZoologicoP2/sounds/batlflyby.wav");
+            AudioInputStream flyStream = AudioSystem.getAudioInputStream(flyFile);
+            flyClip = AudioSystem.getClip();
+            flyClip.open(flyStream);
+
+            File eatFile = new File("src/com/CodingDojo/GuardiaZoologicoP2/sounds/eat.wav");
+            AudioInputStream eatStream = AudioSystem.getAudioInputStream(eatFile);
+            eatClip = AudioSystem.getClip();
+            eatClip.open(eatStream);
+
+            File attackFile = new File("src/com/CodingDojo/GuardiaZoologicoP2/sounds/attack.wav");
+            AudioInputStream attackStream = AudioSystem.getAudioInputStream(attackFile);
+            attackClip = AudioSystem.getClip();
+            attackClip.open(attackStream);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(int energy) {
+        this.energy = energy;
+    }
+
+    public void fly() {
+        System.out.println("*SONIDO DE MURCIELAGO NOSE COMO ES XD*");
+        playSound(flyClip);
+        setEnergy(getEnergy() - 50);
+    }
+
+    public void eatHumans() {
+        System.out.println("Bueno, no importa.");
+        playSound(eatClip);
+        setEnergy(getEnergy() + 25);
+    }
+
+    public void attackTown() {
+        System.out.println("*SONIDO CIUDAD EN LLAMAS*");
+        playSound(attackClip);
+        setEnergy(getEnergy() + 100);
+    }
+
+    private void playSound(Clip clip) {
+        if (clip.isRunning()) {
+            clip.stop();
+        }
+        clip.setFramePosition(0);
+        clip.start();
+    }
+}

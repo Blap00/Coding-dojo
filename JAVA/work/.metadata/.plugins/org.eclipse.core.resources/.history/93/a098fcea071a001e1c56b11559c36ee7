@@ -1,0 +1,27 @@
+package com.CodingDojo.GuardiaZoologicoP2;
+
+public class Bat{
+	private int energy;
+
+	public Bat(int energy) {
+		this.energy = energy;
+	}
+
+	public int getEnergy() {
+		return energy;
+	}
+
+	public void setEnergy(int energy) {
+		this.energy = energy;
+	}
+	
+	public void fly(){
+		
+	}
+	public void eatHumans(){
+		
+	}
+	public void attacTown(){
+		
+	}
+}

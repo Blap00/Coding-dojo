@@ -1,0 +1,27 @@
+package mapaDeHashmatique;
+import java.util.HashMap;
+
+public class Hashmatique {
+    public static void main(String[] args) {
+        // Crear el tracklist HashMap
+        HashMap<Integer, String> trackList = new HashMap<>();
+
+        // Agregar canciones al tracklist
+        trackList.put(1, "Letra de la canción 1");
+        trackList.put(2, "Letra de la canción 2");
+        trackList.put(3, "Letra de la canción 3");
+        trackList.put(4, "Letra de la canción 4");
+
+        // Extraer una canción por su título
+        int tituloCancion = 1;
+        String letraCancion = trackList.get(tituloCancion);
+        System.out.println("Letra de la canción \"" + tituloCancion + "\": " + letraCancion);
+
+        // Imprimir todos los nombres de las pistas y las letras
+        System.out.println("Tracklist:");
+        for (String titulo : trackList.keySet()) {
+            String letra = trackList.get(titulo);
+            System.out.println(titulo + ": " + letra);
+        }
+    }
+}

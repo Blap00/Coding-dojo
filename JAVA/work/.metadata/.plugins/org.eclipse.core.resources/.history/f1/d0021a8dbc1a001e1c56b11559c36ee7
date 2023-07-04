@@ -1,0 +1,8 @@
+package com.codingDojo.bankAccount;
+
+public class BankAccount{
+	private String numAccount;
+	private double salCuenCorriente;
+	private double salCuenAhorros;
+	
+}

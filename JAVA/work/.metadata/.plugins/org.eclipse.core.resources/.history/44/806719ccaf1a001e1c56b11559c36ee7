@@ -1,0 +1,35 @@
+package com.CodingDojo.GuardiaZoologicoP2;
+
+import java.
+public class Bat{
+	private int energy;
+
+	public Bat(int energy) {
+		this.energy = energy;
+		System.out.println(getEnergy());
+	}
+
+	public int getEnergy() {
+		return energy;
+	}
+
+	public void setEnergy(int energy) {
+		this.energy = energy;
+	}
+	
+	public void fly(){
+		System.out.println("*SONIDO DE MURCIELAGO NOSE COMO ES XD*");
+		setEnergy(getEnergy()- 50);
+	}
+	
+	public void eatHumans(){
+		System.out.println("Bueno, no importa.");
+		setEnergy(getEnergy()+25);
+	}
+	
+	public void attackTown(){
+		System.out.println("*SONIDO CIUDAD EN LLAMAS*");
+		setEnergy(getEnergy()+100);
+	}
+	
+}

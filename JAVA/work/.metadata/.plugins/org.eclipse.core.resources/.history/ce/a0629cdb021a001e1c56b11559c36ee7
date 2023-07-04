@@ -1,0 +1,21 @@
+package com.CodingDojo.GuardiaZoologicoP1;
+
+public class Gorilla{
+	private int value;
+	Mammal energ= new Mammal(100);
+	public Gorilla{
+		
+	}
+	public void throwSomething() {
+		System.out.println("El gorila ha lanzado una roca.");
+		energ.setEnergyLevel((int) (energ.getEnergyLevel()-5));
+	}
+	public void eatBananas(){
+		System.out.println("El gorila se siente feliz por haber comido una banana!");
+		energ.setEnergyLevel((int) (energ.getEnergyLevel()+10));
+	}
+	public void climb() {
+		System.out.println("El gorila ha escalado un arbol, muy cansador!");
+		energ.setEnergyLevel((int)(energ.getEnergyLevel()-10));
+	}
+}

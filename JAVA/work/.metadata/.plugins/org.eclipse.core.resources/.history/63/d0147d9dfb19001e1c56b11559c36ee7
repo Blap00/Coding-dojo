@@ -1,0 +1,70 @@
+package com.CodingDojo.ListaSimpleEnlazada;
+
+public class Node {
+	public int value;
+	public Node next;
+
+	public Node(int value) {
+		this.value = value;
+		this.next = null;
+	}
+
+	public Node find(int value) {
+		if (next == null) {
+			return null;
+		} else {
+			Node runner = next;
+			while (runner != null) {
+				if (runner.value == value) {
+					System.out.println("Encontrado el valor de; "+value);
+					return runner;
+				}
+				else {
+					System.out.println("No se ha encontrado el valor de: "+value);
+				}
+				runner = runner.next;
+			}
+			return null;
+		}
+	}
+
+	public void removeAt(int index) {
+		if (next == null || index < 0) {
+			return;
+		} else if (index == 0) {
+			next = next.next;
+		} else {
+			Node runner = next;
+			int count = 0;
+			while (runner != null && count < index - 1) {
+				runner = runner.next;
+				count++;
+			}
+			if (runner != null && runner.next != null) {
+				runner.next = runner.next.next;
+			}
+		}
+	}
+
+	public void add(int value) {
+		Node newNode = new Node(value);
+		if (next == null) {
+			next = newNode;
+		} else {
+			Node runner = next;
+			while (runner.next != null) {
+				runner = runner.next;
+			}
+			runner.next = newNode;
+		}
+	}
+
+	public void printValues() {
+		Node runner = next;
+		while (runner != null) {
+			System.out.println(runner.value);
+			runner = runner.next;
+		}
+	}
+
+}

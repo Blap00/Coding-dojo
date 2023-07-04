@@ -1,0 +1,26 @@
+package com.CodingDojo.maestroDeObjetosII;
+
+public class Main {
+    public static void main(String[] args) {
+        Human target = new Human();
+        Wizard wizard = new Wizard();
+        Ninja ninja = new Ninja();
+        Samurai samurai = new Samurai();
+        Ronin ronin = new Ronin();
+        //ACTIVIDAD DEL WIZARD
+        wizard.heal(target);
+        wizard.fireBall(target);
+        //ACTIVIDAD DEL NINJA
+        ninja.steal(target);
+        ninja.runAway();
+
+        samurai.attack(target);
+        samurai.deathBlow(target);
+        samurai.meditate();
+
+        ronin.attack(target);
+        ronin.sacrifice(target);
+
+        System.out.println("Number of samurais: " + Samurai.howMany());
+    }
+}

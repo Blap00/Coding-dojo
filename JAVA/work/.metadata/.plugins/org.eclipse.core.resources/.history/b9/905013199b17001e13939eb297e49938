@@ -1,0 +1,25 @@
+package listaDeExcepciones;
+
+import java.util.ArrayList;
+
+public class ListaExcepcion {
+    public funcPrincipal()
+    {
+        // Crear el ArrayList con números y cadenas
+        ArrayList<Object> myList = new ArrayList<>();
+        myList.add("13");
+        myList.add("Hola Mundo");
+        myList.add(48);
+        myList.add("Adios Mundo");
+
+        // Intentar hacer cast a cada elemento e imprimir los mensajes de error
+        for (int i = 0; i < myList.size(); i++) {
+            try {
+                int castedValue = (int) myList.get(i);
+                System.out.println("El valor en el índice " + i + " es: " + castedValue);
+            } catch (ClassCastException e) {
+                System.out.println("Error en el índice " + i + ". El valor del objeto es: " + myList.get(i));
+            }
+        }
+    }
+}

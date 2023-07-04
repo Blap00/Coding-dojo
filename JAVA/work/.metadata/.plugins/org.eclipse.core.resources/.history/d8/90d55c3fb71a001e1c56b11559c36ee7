@@ -1,0 +1,17 @@
+package com.CodingDojo.maestroDeObjetosII;
+
+public class Ronin extends Samurai {
+    public Ronin() {
+        this.health = 150;
+        setSamuraiCount(getSamuraiCount() + 1); 
+    }
+
+    public void sacrifice(Human target) {
+        int targetHealthBefore = target.health;
+        target.health = 0;
+        this.health += targetHealthBefore;
+        System.out.println("Ronin used Sacrifice! Target's health reduced to 0. Ronin's health increased.");
+        System.out.println("Target's health before: " + targetHealthBefore);
+        System.out.println("Ronin's health after: " + this.health);
+    }
+}

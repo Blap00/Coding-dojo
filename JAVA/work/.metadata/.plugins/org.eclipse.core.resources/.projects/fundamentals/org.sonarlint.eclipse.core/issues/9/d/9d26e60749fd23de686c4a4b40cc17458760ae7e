@@ -1,0 +1,10 @@
+
+„	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(®ı„îÿÿÿÿÿ8ñÇ‰1HÚRMINORZ
+CODE_SMELL
+
+java:S1319™"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(¬¬ë³ùÿÿÿÿ8ÍÒˆ1HÑRMINORZ
+CODE_SMELL
+R
+java:S2119z"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8ÍÒˆ1HÔRCRITICALZBUG
+R
+java:S2119l"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8ÍÒˆ1HÕRCRITICALZBUG

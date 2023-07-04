@@ -1,0 +1,13 @@
+package proyectoClass;
+public class ProjectTest{
+	public static void main(String[] args){
+		String nombre= "Fabian Palma";
+		String descripcion="El es un estudiante de CodingDojo y Forge";
+		int cost=89;
+		Project pj= new Project(nombre, descripcion, cost);
+		System.out.println("Funciona el main");
+		System.out.println(pj.getNombre());
+		System.out.println(pj.getDescripcion());
+		System.out.println(pj.elevatorPitch());
+	}
+}

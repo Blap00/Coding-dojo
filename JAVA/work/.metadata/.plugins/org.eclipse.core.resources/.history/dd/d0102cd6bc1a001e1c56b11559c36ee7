@@ -1,0 +1,24 @@
+package com.codingDojo.bankAccount;
+
+public class BankAccount{
+	private String numAccount;
+	private double salCuenCorriente;
+	private double salCuenAhorros;
+	
+	private static int cantCuenCorriente;
+	private static double totalCuentas;
+	//CONSTRUCTOR
+	public BankAccount(){
+		this.numAccount= numeAccount();
+	}
+	//GET AND SET
+	
+	//METODOS ESPECIFICOS
+	private static int numeAccount() {
+		int numeros = this.numAccount;
+		
+		
+		return numeros;
+	}
+	
+}

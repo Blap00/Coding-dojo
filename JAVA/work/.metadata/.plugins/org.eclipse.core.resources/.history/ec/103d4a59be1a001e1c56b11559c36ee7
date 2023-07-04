@@ -1,0 +1,72 @@
+package com.codingDojo.bankAccount;
+
+import java.util.Random;
+
+public class BankAccount{
+	private String numAccount;
+	private double salCuenCorriente;
+	private double salCuenAhorros;
+	
+	private static int cantCuentas;
+	private static double totalCuentas;
+	//CONSTRUCTOR
+	public BankAccount(){
+		this.numAccount= generateAccountNumber();
+		cantCuentas++;
+	}
+	//GET AND SET
+	public double getSalCuenCorriente() {
+		return salCuenCorriente;
+	}
+
+	public void setSalCuenCorriente(double salCuenCorriente) {
+		this.salCuenCorriente = salCuenCorriente;
+	}
+
+	public double getSalCuenAhorros() {
+		return salCuenAhorros;
+	}
+
+	public void setSalCuenAhorros(double salCuenAhorros) {
+		this.salCuenAhorros = salCuenAhorros;
+	}
+	
+	public String getNumAccount() {
+		return numAccount;
+	}
+	public void setNumAccount(String numAccount) {
+		this.numAccount = numAccount;
+	}
+	public static int getCantCuentas() {
+		return cantCuentas;
+	}
+	public static void setCantCuentas(int cantCuentas) {
+		BankAccount.cantCuentas = cantCuentas;
+	}
+	public static double getTotalCuentas() {
+		return totalCuentas;
+	}
+	public static void setTotalCuentas(double totalCuentas) {
+		BankAccount.totalCuentas = totalCuentas;
+	}
+	//METODOS ESPECIFICOS
+	private String generateAccountNumber() {
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 10; i++) {
+            sb.append(random.nextInt(9));
+        }
+        return sb.toString();
+    }
+	private static void depositoCuentas(String cuenta, double cantidad) {
+		if(cuenta=="Corriente"||cuenta=="corriente"){
+			
+		}else if((cuenta=="Ahorro")||(cuenta=="ahorro")){
+			
+		}
+	}
+	
+
+	
+	
+}

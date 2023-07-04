@@ -1,0 +1,64 @@
+package jsToJava;
+import java.util.Arrays;
+import java.util.*;
+
+public class JavascriptI {	
+	//EJERCICIO 1
+	public static void print1To255() {
+		int[] newarr;
+        for (int i = 1; i <= 255; i++) {
+        	newarr.add
+            System.out.println(i);
+        }
+    }
+	//EJERCICIO 2
+    public static double[] maxMinAvg(int[] arr) {
+        int max = arr[0];
+        int min = arr[0];
+        int sum = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+            sum += arr[i];
+        }
+        double average = (double) sum / arr.length;
+        return new double[]{max, min, average};
+    }
+    /*
+    public static int[] negativoToZero(int[] arr){
+            int[] newArr = new int[arr.length];
+            for (int i = 0; i < arr.length; i++) {
+            	if(arr[i]<0) {
+            		newArr[i]= 0;
+            	}else {
+            		newArr[i]= arr[i];
+            	}
+            }
+            return newArr ;       
+    }
+    */
+    public static void main(String[] args) {
+        int[] numbers = {5, 9, 3, 7, 2, 1, 8, 6, 4};
+        double[] resultmax = maxMinAvg(numbers);
+        //int[] resultNT0 = negativoToZero(numbers);
+        System.out.println("Imprimir del 1 al 255:");
+        print1To255();
+        System.out.println("__________________");
+        System.out.println("Max: " + resultmax[0]);
+        System.out.println("Min: " + resultmax[1]);
+        System.out.println("Avg: " + resultmax[2]);
+        System.out.println("__________________");
+        /*
+        System.out.println("Resultados de Negative To Zero: "+ Arrays.toString(resultNT0));
+        System.out.println("__________________");
+        */
+
+        
+        
+    }
+    
+}

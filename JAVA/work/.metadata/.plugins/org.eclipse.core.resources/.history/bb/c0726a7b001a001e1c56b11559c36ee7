@@ -1,0 +1,10 @@
+package com.CodingDojo.GuardiaZoologicoP1;
+
+public class Mammal{
+	private double energyLevel;
+
+	public Mammal(double energyLevel) {
+		this.energyLevel = energyLevel;
+	}
+	
+}

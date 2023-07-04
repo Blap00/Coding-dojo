@@ -1,0 +1,12 @@
+package testingClass;
+
+
+
+public class BasicJavaMain{
+	
+	public static void main(String[] args) {
+		BasicJava bj= new BasicJava();
+		System.out.println(bj.getPrint255());
+		System.out.println(bj.getOddNumbers());
+	}
+}

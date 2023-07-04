@@ -1,4 +1,5 @@
 package mapaDeHashmatique;
+
 import java.util.HashMap;
 
 public class Hashmatique {
@@ -25,3 +26,4 @@ public class Hashmatique {
         }
     }
 }
+	

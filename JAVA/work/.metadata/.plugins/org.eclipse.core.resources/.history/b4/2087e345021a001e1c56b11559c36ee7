@@ -1,0 +1,12 @@
+package com.CodingDojo.GuardiaZoologicoP1;
+
+public class Gorilla{
+	Mammal energ= new Mammal(100);
+	public void throwSomething() {
+		System.out.println("El gorila ha lanzado una roca.");
+		energ.setEnergyLevel(energ.getEnergyLevel()-5);
+	}
+	public void eatBananas(){
+		
+	}
+}

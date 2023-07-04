@@ -1,0 +1,59 @@
+package com.codingDojo.bankAccount;
+
+import com.codingDojo.bankAccount.BankAccount;
+
+public class BankAccountTest {
+    public static void main(String[] args) {
+        // Crear la primera cuenta bancaria
+        BankAccount cuenta1 = new BankAccount();
+
+        // Depositar dinero en la cuenta corriente y de ahorros
+        cuenta1.depositarEnCorriente(500.0);
+        cuenta1.depositarEnAhorros(1000.0);
+
+        // Mostrar los saldos
+        System.out.println("Saldo de la cuenta corriente: $" + cuenta1.getSaldoCorriente());
+        System.out.println("Saldo de la cuenta de ahorros: $" + cuenta1.getSaldoAhorros());
+
+        // Retirar dinero de la cuenta corriente y de ahorros
+        cuenta1.retirarDeCorriente(200.0);
+        cuenta1.retirarDeAhorros(500.0);
+
+        // Mostrar los saldos actualizados
+        System.out.println("Saldo de la cuenta corriente después de retirar: $" + cuenta1.getSaldoCorriente());
+        System.out.println("Saldo de la cuenta de ahorros después de retirar: $" + cuenta1.getSaldoAhorros());
+
+        // Mostrar el saldo total
+        cuenta1.mostrarSaldoTotal();
+
+        // Obtener la cantidad de cuentas creadas hasta el momento
+        int cantidadCuentas = BankAccount.getCantidadCuentas();
+        System.out.println("Cantidad de cuentas creadas: " + cantidadCuentas);
+
+        // Crear la segunda cuenta bancaria
+        BankAccount cuenta2 = new BankAccount();
+
+        // Depositar dinero en la cuenta corriente y de ahorros
+        cuenta2.depositarEnCorriente(1000.0);
+        cuenta2.depositarEnAhorros(2000.0);
+
+        // Mostrar los saldos de la segunda cuenta
+        System.out.println("\nSaldo de la cuenta corriente (Cuenta 2): $" + cuenta2.getSaldoCorriente());
+        System.out.println("Saldo de la cuenta de ahorros (Cuenta 2): $" + cuenta2.getSaldoAhorros());
+
+        // Retirar dinero de la cuenta corriente y de ahorros
+        cuenta2.retirarDeCorriente(500.0);
+        cuenta2.retirarDeAhorros(1000.0);
+
+        // Mostrar los saldos actualizados de la segunda cuenta
+        System.out.println("Saldo de la cuenta corriente después de retirar (Cuenta 2): $" + cuenta2.getSaldoCorriente());
+        System.out.println("Saldo de la cuenta de ahorros después de retirar (Cuenta 2): $" + cuenta2.getSaldoAhorros());
+
+        // Mostrar el saldo total actualizado
+        cuenta2.mostrarSaldoTotal();
+
+        // Obtener la cantidad total de cuentas creadas hasta el momento
+        cantidadCuentas = BankAccount.getCantidadCuentas();
+        System.out.println("Cantidad total de cuentas creadas: " + cantidadCuentas);
+    }
+}

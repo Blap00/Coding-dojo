@@ -1,0 +1,20 @@
+package arreglos;
+
+import java.util.Random;
+
+public class Arreglos {
+    public static void main(String[] args) {
+    	Random ran = new Random(); //Importamos libreria Random
+    	int[] myNewArray;//declaramos una Variable como array
+    	System.out.println("Primer momento del array");
+    	myNewArray= new int[0]; //Inicializacion
+    	int count=0;//declaramos contador de arrays
+    	while(count<=4){ //Mientras el contador sea menor o igual a 4
+			myNewArray[count] = ran.nextInt(8); // agregamos valor random int de 0 a 8 
+        	count++; //Sumamos la variable de contador + 1
+    	}
+    	count=0; //Regresamos el contador a 0 en caso de utilizarlo más tarde
+    	System.out.println("ARRAY con datos generados: "); 
+    	System.out.println(myNewArray);
+    }    
+}

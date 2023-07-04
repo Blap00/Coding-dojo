@@ -1,0 +1,10 @@
+
+l
+java:S1854"9Remove this useless assignment to local variable "count".(‰í”Ø8†ôø™1H›RMAJORZ
+CODE_SMELL
+‘
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(°¤¼™ùÿÿÿÿ8¼¡†š1H™RMINORZ
+CODE_SMELL
+Œ
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(áº €8¶°¬›1HœRMINORZ
+CODE_SMELL

@@ -1,0 +1,22 @@
+package proyectoClass;
+public class ProjectTest {
+    public static void main(String[] args) {
+        // Crear instancias de Project
+        Project project1 = new Project();
+        project1.setName("Proyecto 1");
+        project1.setDescription("Descripción del proyecto 1");
+        project1.setInitialCost(1000.0);
+
+        Project project2 = new Project("Proyecto 2");
+        project2.setDescription("Descripción del proyecto 2");
+        project2.setInitialCost(2000.0);
+
+        Project project3 = new Project("Proyecto 3", "Descripción del proyecto 3");
+        project3.setInitialCost(3000.0);
+
+        // Mostrar el elevator pitch de cada proyecto
+        System.out.println(project1.elevatorPitch());
+        System.out.println(project2.elevatorPitch());
+        System.out.println(project3.elevatorPitch());
+    }
+}

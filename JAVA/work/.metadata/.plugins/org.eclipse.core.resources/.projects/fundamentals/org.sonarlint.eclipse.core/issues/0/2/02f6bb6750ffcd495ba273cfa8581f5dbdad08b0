@@ -1,0 +1,7 @@
+
+œ
+java:S13194"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(©ÜËH“RMINORZ
+CODE_SMELL
+
+java:S1192r"ZDefine a constant instead of duplicating this literal "------------------------" 11 times.(éç¬ùÿÿÿÿH‡RCRITICALZ
+CODE_SMELL

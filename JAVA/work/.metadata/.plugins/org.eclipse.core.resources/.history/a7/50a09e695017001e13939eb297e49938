@@ -1,0 +1,16 @@
+package testingClass;
+
+
+public class BasicJavaMain {
+    public static void main(String[] args) {
+        BasicJava bj = new BasicJava();
+        int[] numb = {1, 5, 10, 7, -10};
+        bj.setNumber(numb);
+        System.out.println(bj.getPrint255());
+        System.out.println(bj.getOddNumbers());
+        System.out.println(bj.getCountGreater());
+        System.out.println(bj.getSquareValues());
+        System.out.println(bj.getReplaceNegatives());	
+        System.out.println(bj.getNumberCopyII().getClass());
+    }
+}

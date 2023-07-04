@@ -7,7 +7,7 @@ public class Arreglos {
     public static void main(String[] args) {
     	ArrayList<Object> myNewArray = new ArrayList<Object>(); //declaramos el array como Array 
     	Random ran = new Random(); //Importamos libreria Random
-    	System.out.println("Primer momento del array");
+    	System.out.println("Primera declaracion del array");
     	int count=0;//declaramos contador de arrays
     	while(count<=4){ //Mientras el contador sea menor o igual a 4
 			myNewArray.add(ran.nextInt(5)); // Utilizaremos el metodo ADD de ARRAYLIST para agregar valor random int de 0 a 8 

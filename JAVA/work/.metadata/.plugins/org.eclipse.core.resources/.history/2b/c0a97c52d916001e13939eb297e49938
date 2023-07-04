@@ -1,0 +1,12 @@
+package testingClass;
+
+
+
+public class BasicJavaMain{
+	
+	public static void main(String[] args) {
+		BasicJava bj= new BasicJava(null);
+		int[] printTo255 = bj.getPrint255();
+		System.out.println(printTo255);
+	}
+}

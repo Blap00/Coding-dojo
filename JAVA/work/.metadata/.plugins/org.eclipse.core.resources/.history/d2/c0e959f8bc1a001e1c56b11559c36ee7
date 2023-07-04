@@ -1,0 +1,27 @@
+package com.codingDojo.bankAccount;
+
+import java.util.Random;
+
+public class BankAccount{
+	private String numAccount;
+	private double salCuenCorriente;
+	private double salCuenAhorros;
+	
+	private static int cantCuenCorriente;
+	private static double totalCuentas;
+	//CONSTRUCTOR
+	public BankAccount(){
+		this.numAccount= generateAccountNumber();
+	}
+	//GET AND SET
+	
+	//METODOS ESPECIFICOS
+	private String generateAccountNumber() {
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 10; i++) {
+            sb.append(random.nextInt(9));
+        }
+        return sb.toString();
+    }
+}
