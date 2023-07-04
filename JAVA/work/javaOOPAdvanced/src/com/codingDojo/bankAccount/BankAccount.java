@@ -23,45 +23,16 @@ public class BankAccount {
         return sb.toString();
     }
 
+    public double getSaldoCorriente() {
+        return saldoCorriente;
+    }
+
+    public double getSaldoAhorros() {
+        return saldoAhorros;
+    }
     
-
-	public String getNumeroCuenta() {
-		return numeroCuenta;
-	}
-
-	public void setNumeroCuenta(String numeroCuenta) {
-		this.numeroCuenta = numeroCuenta;
-	}
-
-	public double getSaldoCorriente() {
-		return saldoCorriente;
-	}
-
-	public void setSaldoCorriente(double saldoCorriente) {
-		this.saldoCorriente = saldoCorriente;
-	}
-
-	public double getSaldoAhorros() {
-		return saldoAhorros;
-	}
-
-	public void setSaldoAhorros(double saldoAhorros) {
-		this.saldoAhorros = saldoAhorros;
-	}
-
-	public static double getDineroTotal() {
-		return dineroTotal;
-	}
-
-	public static void setDineroTotal(double dineroTotal) {
-		BankAccount.dineroTotal = dineroTotal;
-	}
-
-	public static void setCantidadCuentas(int cantidadCuentas) {
-		BankAccount.cantidadCuentas = cantidadCuentas;
-	}
-
-	@SuppressWarnings("static-access")
+    
+    @SuppressWarnings("static-access")
     public void depositarEnCorriente(double monto) {
         saldoCorriente += monto;
         dineroTotal += monto;
