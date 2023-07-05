@@ -2,15 +2,15 @@ package com.CodingDojo.maestroDeObjeto;
 
 public class HumanTest {
     public static void main(String[] args) {
-        Human attacker = new Human();
-        Human target = new Human();
+        Human player1 = new Human();
+        Human player2 = new Human();
 
-        System.out.println("Attacker's health before attack: " + attacker.getHealth());
-        System.out.println("Target's health before attack: " + target.getHealth());
+        System.out.println("Salud de Player 1: " + player1.getHealth());
+        System.out.println("Salud de Player 2: " + player2.getHealth());
 
-        attacker.attack(target);
+        player1.attack(player2);
 
-        System.out.println("Attacker's health after attack: " + attacker.getHealth());
-        System.out.println("Target's health after attack: " + target.getHealth());
+        System.out.println("Salud de Player 1: " + player1.getHealth());
+        System.out.println("Salud de Player 2: " + player2.getHealth());
     }
 }

@@ -3,8 +3,8 @@ package com.CodingDojo.GuardiaZoologicoP2;
 public class Mammal{
 	private int energyLevel;
 
-	public Mammal() {
-		this.energyLevel=100;
+	public Mammal(int energy) {
+		this.energyLevel= energy;
 	}
 
 	public int getEnergyLevel() {

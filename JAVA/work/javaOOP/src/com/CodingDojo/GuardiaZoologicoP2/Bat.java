@@ -1,28 +1,30 @@
 package com.CodingDojo.GuardiaZoologicoP2;
 
-public class Bat {
-    private int energy;
+public class Bat extends Mammal{
+//    private int energy;
+	
 
-    public Bat() {
-        this.energy = 300;
-    }
+    public Bat(int energy) {
+		super(energy);
 
-    public void fly() {
+	}
+
+	public void fly() {
         System.out.println("*SONIDO DE MURCIÉLAGO AL DESPEGAR*");
-        energy -= 50;
+        setEnergyLevel(getEnergyLevel() - 50);
+//      energy -=50;
     }
 
     public void eatHumans() {
         System.out.println("Bueno, no importa.");
-        energy += 25;
+        setEnergyLevel(getEnergyLevel() + 25);
+//        energy += 25;
     }
 
     public void attackTown() {
         System.out.println("*SONIDO DE CIUDAD EN LLAMAS*");
-        energy -= 100;
-    }
-
-    public int getEnergy() {
-        return energy;
+        setEnergyLevel(getEnergyLevel() - 100);
+//        energy -= 100;
     }
 }
+
