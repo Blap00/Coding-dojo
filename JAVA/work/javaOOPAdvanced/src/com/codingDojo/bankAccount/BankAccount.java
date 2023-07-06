@@ -32,7 +32,16 @@ public class BankAccount {
     }
     
     
-    @SuppressWarnings("static-access")
+    
+    public String getNumeroCuenta() {
+		return numeroCuenta;
+	}
+
+	public void setNumeroCuenta(String numeroCuenta) {
+		this.numeroCuenta = numeroCuenta;
+	}
+
+	@SuppressWarnings("static-access")
     public void depositarEnCorriente(double monto) {
         saldoCorriente += monto;
         dineroTotal += monto;
@@ -70,5 +79,15 @@ public class BankAccount {
 
     public static int getCantidadCuentas() {
         return cantidadCuentas;
+    }
+    
+    public void transferir(double monto, BankAccount cuentaDestino) {
+        if (saldoCorriente >= monto) {
+            saldoCorriente -= monto;
+            cuentaDestino.depositarEnCorriente(monto);
+            System.out.println("Transferencia exitosa. Se ha transferido $" + monto + " a la cuenta " + cuentaDestino.getNumeroCuenta());
+        } else {
+            System.out.println("Fondos insuficientes en la cuenta corriente.");
+        }
     }
 }

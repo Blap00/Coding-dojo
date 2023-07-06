@@ -4,6 +4,12 @@ public class BankAccountTest {
     public static void main(String[] args) {
         // Crear la primera cuenta bancaria
         BankAccount cuenta1 = new BankAccount();
+        // Obtener la cantidad de cuentas creadas hasta el momento
+        int cantidadCuentas = BankAccount.getCantidadCuentas();
+        System.out.println("Cantidad de cuentas creadas: " + cantidadCuentas);
+
+        // Crear la segunda cuenta bancaria
+        BankAccount cuenta2 = new BankAccount();
 
         // Depositar dinero en la cuenta corriente y de ahorros
         cuenta1.depositarEnCorriente(500.0);
@@ -20,17 +26,15 @@ public class BankAccountTest {
         // Mostrar los saldos actualizados
         System.out.println("Saldo de la cuenta corriente después de retirar: $" + cuenta1.getSaldoCorriente());
         System.out.println("Saldo de la cuenta de ahorros después de retirar: $" + cuenta1.getSaldoAhorros());
-
-        // Mostrar el saldo total
+        //TRANSFERENCIAS (Desde Cuenta corriente a otro usuario
+        cuenta1.transferir(200, cuenta2); // Transferir $500 de cuenta1 a cuenta2
         cuenta1.mostrarSaldoTotal();
 
-        // Obtener la cantidad de cuentas creadas hasta el momento
-        int cantidadCuentas = BankAccount.getCantidadCuentas();
-        System.out.println("Cantidad de cuentas creadas: " + cantidadCuentas);
 
-        // Crear la segunda cuenta bancaria
-        BankAccount cuenta2 = new BankAccount();
-
+        // Obtener la cantidad total de cuentas creadas hasta el momento
+        cantidadCuentas = BankAccount.getCantidadCuentas();
+        System.out.println("Cantidad total de cuentas creadas: " + cantidadCuentas);
+        
         // Depositar dinero en la cuenta corriente y de ahorros
         cuenta2.depositarEnCorriente(1000.0);
         cuenta2.depositarEnAhorros(2000.0);
@@ -49,9 +53,5 @@ public class BankAccountTest {
 
         // Mostrar el saldo total actualizado
         cuenta2.mostrarSaldoTotal();
-
-        // Obtener la cantidad total de cuentas creadas hasta el momento
-        cantidadCuentas = BankAccount.getCantidadCuentas();
-        System.out.println("Cantidad total de cuentas creadas: " + cantidadCuentas);
     }
 }
