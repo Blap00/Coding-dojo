@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.checkerboard {
+
+	border-collapse: collapse;
+}
+.checkerboard{
+	width: 50%;
+	height: 50%;
+}
+.checkerboard td {
+    width: 5vw;
+    height: 5vh;
+}
+
+.white {
+    background-color: purple;
+}
+
+.black {
+    background-color: blue;
+}
+body{
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
