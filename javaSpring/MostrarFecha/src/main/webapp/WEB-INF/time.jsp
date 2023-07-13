@@ -6,13 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time</title>
-    <style>
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    <script src="js/scriptTime.js"></script>
+    <link rel="stylesheet" href="css/stylefile.css">
 </head>
 <body>
     <c:out value="${dateTime}"/>    
