@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container#msgErrorA{
+	padding-top: 7vh;
+	color: red;
+}
+.container#FormsArea{
+	text-align: center;
+    padding-top: 3vh;
+}
+input#secretCode{
+	margin: 1vh;
+}
