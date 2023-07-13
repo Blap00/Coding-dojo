@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time</title>
     <script src="js/scriptdate.js"></script>
-    <link rel="stylesheet" href="css/stylefile.css">
+    <link rel="stylesheet" href="css/stylefiles.css">
 </head>
 <body>
-    <c:out value="${date}"/>    
+    <p id="date">
+        <c:out value="${date}"/>    
+    </p>
 </body>
 </html>
