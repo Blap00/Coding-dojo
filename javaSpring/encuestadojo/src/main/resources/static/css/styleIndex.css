@@ -1,0 +1,44 @@
+.container#FormsArea {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#FormsArea label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+#FormsArea label > * {
+	margin-left: auto;
+	width: 40%;
+	box-sizing: border-box;
+}
+
+#FormsArea textarea {
+	width: 100%;
+	box-sizing: border-box;
+	resize: none;
+	margin-bottom: 10px;
+}
+
+.labelmodify {
+	margin-right: 20px;
+}
+
+form {
+	border: 1px solid black;
+	width: 30%;
+	padding: 20px;
+}
+
+button {
+	margin-left: 82%;
+}
+.container#msgErrorA{
+	display: flex;
+    justify-content: center;
+    color: red;
+}
