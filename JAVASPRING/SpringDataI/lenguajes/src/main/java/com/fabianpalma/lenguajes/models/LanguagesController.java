@@ -2,6 +2,7 @@ package com.fabianpalma.lenguajes.models;
 
 import java.util.List;
 
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,10 +19,12 @@ import jakarta.validation.Valid;
 
 @Controller
 public class LanguagesController {
-private final LanguagesService languagesService;
+	private final LanguagesService languagesService;
+	private final JdbcTemplate jdbcTemplate;
 	
-	public LanguagesController(LanguagesService languagesService) {
+	public LanguagesController(LanguagesService languagesService, JdbcTemplate jdbcTemplate) {
 		this.languagesService= languagesService;
+		this.jdbcTemplate = jdbcTemplate;
 	}
 	@RequestMapping("/languages")
 	public String index(Model model,@ModelAttribute("languages") Languages language) {
@@ -72,7 +75,15 @@ private final LanguagesService languagesService;
     }
 	@DeleteMapping("/languages/{id}/delete")
     public String delete(@PathVariable("id") Long id) {
+		// Obtener el ID más grande actual antes de eliminar el registro
+        Long maxId = jdbcTemplate.queryForObject("SELECT MAX(id) FROM languages", Long.class);
+
+        // Eliminar el registro
         languagesService.deleteLanguage(id);
+        if(maxId!=null) {
+        // Establecer el valor del autoincremento en el siguiente número más alto después de eliminar el registro
+        jdbcTemplate.update("ALTER TABLE languages AUTO_INCREMENT = ?", maxId - 1);
+        }
         return "redirect:/languages";
     }
 }
